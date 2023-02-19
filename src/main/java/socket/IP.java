@@ -23,7 +23,7 @@ public class IP {
         public static List<Inet4Address> getLocalIp4AddressFromNetworkInterface() throws SocketException {
             List<Inet4Address> addresses = new ArrayList<>(1);
 
-            // 所有网络接口信息
+
             Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
             if (ObjectUtils.isEmpty(networkInterfaces)) {
                 return addresses;
